@@ -32,16 +32,8 @@ ActiveRecord::Schema.define(version: 2018_11_12_185541) do
   end
 
   create_table "games", force: :cascade do |t|
-    t.boolean "win"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.integer "wins"
-    t.integer "losses"
+    t.string "player"
+    t.integer "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
