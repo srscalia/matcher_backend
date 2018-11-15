@@ -4,7 +4,6 @@ Rails.application.routes.draw do
       resources :cards
       resources :cardsets
       resources :games
-      resources :users
     end
   end
 end

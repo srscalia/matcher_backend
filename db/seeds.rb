@@ -5,17 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.destroy_all
 Game.destroy_all
 Cardset.destroy_all
 Card.destroy_all
 
 
-User.create(name: "Eric", wins: 0, losses: 0)
-User.create(name: "Shelby", wins: 0, losses: 0)
 
-Game.create(win: false, user_id: 1)
-Game.create(win: false, user_id: 2)
+
+Game.create(player: "Shelby", time: 15)
+Game.create(player: "Eric", time: 45)
 
 Cardset.create(name: "Kitties", game_id: 1)
 Cardset.create(name: "Kitties", game_id: 2)
